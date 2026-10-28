@@ -1,0 +1,622 @@
+<!-- ============================================================
+     PRE-RENDERED static build — do not edit directly.
+     Edit assets/js/config.js etc, then re-run:  node build-static.mjs
+     All content is baked in; renders correctly with or without JS.
+     ============================================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Landscaping & Irrigation in Round Rock & Austin, TX | Beautiful Landscapes</title>
+  <meta name="description" content="Licensed landscaping and irrigation company serving Round Rock, Austin, Cedar Park, Leander and Pflugerville since 1996. Sprinkler repair, drainage, hardscaping, tree work. Free estimates." />
+  <link rel="canonical" href="https://beautifullandscapesatx.com/" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#1B2A21" />
+
+  <!-- Local SEO -->
+  <meta name="geo.region" content="US-TX" />
+  <meta name="geo.placename" content="Round Rock, Texas" />
+  <meta name="geo.position" content="30.5083;-97.6789" />
+  <meta name="ICBM" content="30.5083, -97.6789" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Beautiful Landscapes & Irrigation" />
+  <meta property="og:title" content="Landscaping & Irrigation in Round Rock & Austin, TX | Beautiful Landscapes" />
+  <meta property="og:description" content="Licensed landscaping and irrigation company serving Round Rock, Austin, Cedar Park, Leander and Pflugerville since 1996. Sprinkler repair, drainage, hardscaping, tree work. Free estimates." />
+  <meta property="og:url" content="https://beautifullandscapesatx.com/" />
+  <meta property="og:image" content="https://beautifullandscapesatx.com/wp-content/uploads/2024/04/esther-phone-pic-3977-scaled.jpg" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="es_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="https://beautifullandscapesatx.com/wp-content/uploads/2024/04/esther-phone-pic-3977-scaled.jpg" fetchpriority="high" />
+
+  <style>
+/* =============================================================================
+   LANDSCAPER TEMPLATE — minimal editorial (inspired by kononenkogroup.com)
+   Reskin per client: change the tokens in :root below.
+   ========================================================================== */
+
+:root {
+  /* Palette */
+  --forest:      #1B2A21;
+  --forest-800:  #24352A;
+  --moss:        #4E6B44;
+  --leaf:        #7BA05B;
+  --cream:       #F4F1EA;
+  --sand:        #E7E1D4;
+  --stone:       #6E6A5F;
+  --ink-on-dark: #EDE9DF;
+  --line:        rgba(27, 42, 33, 0.14);
+  --line-light:  rgba(237, 233, 223, 0.16);
+
+  /* Type */
+  --font-display: "Fraunces", "Times New Roman", Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+
+  /* Spacing */
+  --gutter: clamp(1.25rem, 5vw, 6rem);
+  --container: 1280px;
+  --section-y: clamp(6rem, 12vw, 12rem);
+
+  --radius: 3px;
+}
+
+/* ---------- Reset ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--cream);
+  color: var(--forest);
+  line-height: 1.6;
+  font-size: clamp(1rem, 1.1vw, 1.125rem);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img { max-width: 100%; display: block; }
+
+/* Full-bleed breakout — when this markup is embedded inside a host page's
+   own boxed/padded section (e.g. a GHL Custom Code element sitting in a
+   "boxed" row), these rules let the page still span the true viewport
+   width instead of being squeezed into that container. Harmless if there's
+   no such ancestor. Does not help if the host's wrapper also applies a
+   CSS transform/filter to itself — that changes the containing block for
+   position:fixed elements (the nav) to that ancestor instead of the
+   viewport; if the nav still looks boxed after this, check the host
+   section for an "entrance animation" or similar effect and disable it. */
+.nav, .hero, .section, .footer {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; padding: 0; }
+button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+input, textarea, select { font: inherit; color: inherit; }
+
+.container { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: var(--gutter); }
+
+/* ---------- Shared type ---------- */
+.eyebrow {
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.18em;
+  color: var(--moss); font-weight: 500;
+}
+.eyebrow--light { color: rgba(237,233,223,0.75); }
+
+.section { padding-block: var(--section-y); }
+.section--dark { background: var(--forest); color: var(--ink-on-dark); }
+.section--dark .eyebrow { color: var(--leaf); }
+
+.section__head { margin-bottom: clamp(2.5rem, 5vw, 4.5rem); }
+.section__head--center { text-align: center; }
+.section__title {
+  font-family: var(--font-display); font-weight: 300;
+  font-size: clamp(2rem, 4.5vw, 4rem); line-height: 1.05; letter-spacing: -0.01em;
+  margin-top: 0.6rem;
+}
+
+.leaf-mark {
+  width: 12px; height: 12px; border-radius: 0 60% 0 60%;
+  background: var(--leaf); display: inline-block; transform: rotate(45deg);
+  flex: none;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.72rem; font-weight: 600;
+  padding: 1rem 1.75rem; border-radius: var(--radius);
+  transition: background .35s ease, color .35s ease, letter-spacing .35s ease, border-color .35s ease;
+}
+.btn--primary { background: var(--forest); color: var(--cream); }
+.btn--primary:hover { background: var(--leaf); letter-spacing: 0.2em; }
+.section--dark .btn--primary { background: var(--leaf); color: var(--forest); }
+.section--dark .btn--primary:hover { background: var(--cream); }
+.btn--ghost { border: 1px solid var(--forest); color: var(--forest); }
+.btn--ghost:hover { background: var(--forest); color: var(--cream); }
+.btn--ghost-light { border-color: rgba(237,233,223,0.5); color: var(--ink-on-dark); }
+.btn--ghost-light:hover { background: var(--ink-on-dark); color: var(--forest); border-color: var(--ink-on-dark); }
+.btn--block { width: 100%; }
+
+/* ---------- Nav ---------- */
+.nav {
+  position: fixed; inset: 0 0 auto 0; z-index: 50;
+  transition: background .4s ease, backdrop-filter .4s ease, box-shadow .4s ease;
+}
+.nav__inner {
+  max-width: var(--container); margin-inline: auto; padding: 1.25rem var(--gutter);
+  display: flex; align-items: center; justify-content: space-between; gap: 2rem;
+}
+.nav__brand { display: flex; align-items: center; gap: 0.6rem; font-weight: 600; letter-spacing: 0.02em; color: var(--cream); }
+.nav__links { display: flex; gap: 2rem; }
+.nav__links a {
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.16em; font-weight: 500;
+  color: var(--cream); position: relative; padding-block: 0.25rem;
+}
+.nav__links a::after {
+  content: ""; position: absolute; left: 0; bottom: 0; height: 1px; width: 0;
+  background: currentColor; transition: width .3s ease;
+}
+.nav__links a:hover::after { width: 100%; }
+.nav__cta { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; color: var(--cream); }
+
+/* scrolled state (added by JS) */
+.nav.is-scrolled { background: rgba(244,241,234,0.9); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--line); }
+.nav.is-scrolled .nav__brand,
+.nav.is-scrolled .nav__links a,
+.nav.is-scrolled .nav__cta { color: var(--forest); }
+
+.nav__toggle { display: none; width: 44px; height: 44px; flex-direction: column; align-items: center; justify-content: center; gap: 6px; margin: -6px; }
+.nav__toggle span { height: 1.5px; width: 24px; background: var(--cream); transition: transform .3s ease, opacity .3s ease; }
+.nav.is-scrolled .nav__toggle span { background: var(--forest); }
+
+/* Mobile menu overlay */
+.menu {
+  position: fixed; inset: 0; z-index: 45; background: var(--forest); color: var(--cream);
+  display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2.5rem;
+}
+.menu[hidden] { display: none; }
+.menu__links { display: flex; flex-direction: column; gap: 1.25rem; text-align: center; }
+.menu__links a { font-family: var(--font-display); font-size: 2rem; font-weight: 300; }
+.menu__phone { font-size: 0.9rem; letter-spacing: 0.05em; color: var(--leaf); }
+
+/* ---------- Hero ---------- */
+.hero { position: relative; min-height: 100svh; display: flex; align-items: flex-end; color: var(--cream); overflow: hidden; }
+.hero__bg { position: absolute; inset: 0; z-index: -1; }
+.hero__bg img { width: 100%; height: 120%; object-fit: cover; }
+.hero__scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(27,42,33,0.45) 0%, rgba(27,42,33,0.25) 40%, rgba(27,42,33,0.8) 100%); }
+.hero__content { padding-bottom: clamp(4rem, 9vw, 8rem); padding-top: 40vh; }
+.hero__title {
+  font-family: var(--font-display); font-weight: 300;
+  font-size: clamp(2.75rem, 7vw, 7rem); line-height: 0.98; letter-spacing: -0.02em;
+  white-space: pre-line; margin: 1.25rem 0;
+  max-width: 14ch;
+}
+.hero__sub { max-width: 46ch; color: rgba(237,233,223,0.9); font-size: clamp(1rem, 1.4vw, 1.25rem); }
+.hero__actions { display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
+.hero__cue {
+  position: absolute; right: var(--gutter); bottom: clamp(2rem, 5vw, 3rem);
+  display: flex; flex-direction: column; align-items: center; gap: 0.75rem;
+  font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.2em; color: rgba(237,233,223,0.8);
+}
+.hero__cue-line { width: 1px; height: 48px; background: rgba(237,233,223,0.5); }
+
+/* ---------- Services (editorial list) ---------- */
+.services { border-top: 1px solid var(--line); }
+.service {
+  border-bottom: 1px solid var(--line);
+  display: grid; grid-template-columns: 3rem 1fr auto; align-items: center; gap: 1.5rem;
+  padding: clamp(1.5rem, 3vw, 2.5rem) 0; position: relative;
+  transition: padding-left .4s ease;
+}
+.service__num { font-size: 0.75rem; color: var(--stone); letter-spacing: 0.1em; }
+.service__title { font-family: var(--font-display); font-weight: 400; font-size: clamp(1.5rem, 3vw, 2.5rem); line-height: 1.1; }
+.service__desc { color: var(--stone); max-width: 52ch; margin-top: 0.5rem; font-size: 1rem; }
+.service__arrow { font-size: 1.5rem; color: var(--moss); transition: transform .4s ease; }
+.service__thumb {
+  position: absolute; right: 4rem; top: 50%; width: 220px; height: 150px; object-fit: cover;
+  transform: translateY(-50%) scale(0.9); opacity: 0; pointer-events: none;
+  border-radius: var(--radius); transition: opacity .4s ease, transform .4s ease; z-index: 2;
+}
+@media (hover: hover) and (min-width: 900px) {
+  .service:hover { padding-left: 1.5rem; }
+  .service:hover .service__arrow { transform: translateX(8px); }
+  .service:hover .service__thumb { opacity: 1; transform: translateY(-50%) scale(1); }
+}
+
+/* ---------- About ---------- */
+.about { display: grid; grid-template-columns: 1.1fr 1fr; grid-template-areas: "lead media" "body media"; gap: clamp(2rem, 5vw, 5rem) clamp(2rem, 6vw, 6rem); align-items: start; }
+.about__lead { grid-area: lead; }
+.about__statement { font-family: var(--font-display); font-weight: 300; font-size: clamp(1.75rem, 3.5vw, 3rem); line-height: 1.12; letter-spacing: -0.01em; margin-top: 0.75rem; }
+.about__body { grid-area: body; color: rgba(237,233,223,0.82); max-width: 46ch; }
+.about__media { grid-area: media; }
+.about__media img { width: 100%; height: 100%; min-height: 340px; object-fit: cover; border-radius: var(--radius); }
+.about__stats { display: flex; flex-wrap: wrap; gap: 2.5rem; margin-top: 2.5rem; }
+.about__stat .value { font-family: var(--font-display); font-size: 1.5rem; color: var(--leaf); }
+.about__stat .label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; color: rgba(237,233,223,0.6); margin-top: 0.25rem; }
+
+/* ---------- Projects ---------- */
+.projects { display: grid; grid-template-columns: repeat(12, 1fr); gap: clamp(1.5rem, 3vw, 3rem) clamp(1.5rem, 3vw, 2.5rem); }
+.project { overflow: hidden; }
+.project:nth-child(4n+1) { grid-column: span 7; }
+.project:nth-child(4n+2) { grid-column: span 5; margin-top: clamp(2rem, 6vw, 6rem); }
+.project:nth-child(4n+3) { grid-column: span 5; }
+.project:nth-child(4n+4) { grid-column: span 7; margin-top: clamp(2rem, 6vw, 6rem); }
+.project__frame { overflow: hidden; border-radius: var(--radius); }
+.project__frame img { width: 100%; aspect-ratio: 4/3; object-fit: cover; transition: transform .8s cubic-bezier(.2,.8,.2,1); }
+@media (hover: hover) { .project:hover .project__frame img { transform: scale(1.05); } }
+.project__caption { display: flex; justify-content: space-between; gap: 1rem; margin-top: 1rem; align-items: baseline; }
+.project__name { font-family: var(--font-display); font-size: 1.25rem; font-weight: 400; }
+.project__type { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--stone); }
+.project__loc { font-size: 0.8rem; color: var(--stone); }
+
+/* ---------- Testimonials ---------- */
+.quotes { max-width: 60rem; margin-inline: auto; display: flex; flex-direction: column; gap: clamp(3rem, 7vw, 6rem); }
+.quote { text-align: center; }
+.quote__text { font-family: var(--font-display); font-weight: 300; font-size: clamp(1.5rem, 3.2vw, 2.75rem); line-height: 1.25; letter-spacing: -0.01em; }
+.quote__attr { margin-top: 1.5rem; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.16em; color: var(--leaf); }
+.quote__meta { color: rgba(237,233,223,0.6); }
+
+/* ---------- Contact ---------- */
+.contact { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2.5rem, 6vw, 6rem); align-items: start; }
+.contact__sub { color: var(--stone); margin-top: 1rem; max-width: 40ch; }
+.contact__details { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 1rem; }
+.contact__details li { display: grid; grid-template-columns: 5rem 1fr; gap: 1rem; align-items: baseline; padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
+.contact__details .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--stone); }
+
+/* Form — minimal underlined inputs */
+.lead-form { display: flex; flex-direction: column; gap: 1.75rem; }
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.75rem; }
+.field { display: flex; flex-direction: column; gap: 0.5rem; }
+.field label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--stone); }
+.field input, .field textarea, .field select {
+  border: none; border-bottom: 1px solid var(--line); background: transparent;
+  padding: 0.75rem 0; border-radius: 0; transition: border-color .3s ease;
+  min-height: 44px;
+}
+.field input:focus, .field textarea:focus, .field select:focus { outline: none; border-color: var(--leaf); }
+.field textarea { resize: vertical; }
+.lead-form__status { font-size: 0.85rem; color: var(--moss); min-height: 1.2em; }
+.lead-form__status.is-error { color: #b4462f; }
+
+/* ---------- Footer ---------- */
+.footer { background: var(--forest-800); color: var(--ink-on-dark); padding-block: clamp(3rem, 6vw, 5rem) 2rem; }
+.footer__inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--line-light); }
+.footer__brand { display: flex; align-items: center; gap: 0.6rem; font-family: var(--font-display); font-size: 1.25rem; }
+.footer__links { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+.footer__links a { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.14em; color: rgba(237,233,223,0.75); }
+.footer__links a:hover { color: var(--leaf); }
+.footer__meta { display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.85rem; color: rgba(237,233,223,0.7); text-align: right; }
+.footer__note { color: var(--leaf); }
+.footer__base { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; font-size: 0.75rem; color: rgba(237,233,223,0.55); }
+.footer__base a { color: rgba(237,233,223,0.7); margin-left: 1.25rem; }
+.footer__base a:hover { color: var(--leaf); }
+
+/* ---------- Reveal (base state for GSAP; visible if JS/motion off) ---------- */
+[data-reveal], [data-reveal-item] { will-change: transform, opacity; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .nav__links, .nav__cta { display: none; }
+  .nav__toggle { display: flex; }
+  .about { grid-template-columns: 1fr; grid-template-areas: "lead" "media" "body"; }
+  .about__media img { min-height: 260px; }
+  .contact { grid-template-columns: 1fr; }
+  .projects { display: flex; flex-direction: column; }
+  .project, .project:nth-child(n) { grid-column: auto; margin-top: 0; }
+  .service { grid-template-columns: 2rem 1fr auto; }
+  .service__thumb { display: none; }
+}
+@media (max-width: 560px) {
+  .field-row { grid-template-columns: 1fr; }
+  .hero__cue { display: none; }
+  .footer__meta { text-align: left; }
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}
+
+/* =============================================================================
+   CLIENT ADDITIONS — Beautiful Landscapes & Irrigation
+   Language toggle · hero trust line · FAQ accordion · sticky mobile call bar
+   ========================================================================== */
+
+/* ---------- Nav: right cluster + language toggle ---------- */
+.nav__right { display: flex; align-items: center; gap: 1.5rem; }
+.lang-toggle {
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--cream); padding: 0.4rem 0.6rem; min-width: 44px; min-height: 44px;
+  border: 1px solid rgba(237,233,223,0.45); border-radius: var(--radius);
+  transition: background .3s ease, color .3s ease, border-color .3s ease;
+}
+.lang-toggle:hover, .lang-toggle:focus-visible { background: var(--cream); color: var(--forest); border-color: var(--cream); outline: none; }
+.nav.is-scrolled .lang-toggle { color: var(--forest); border-color: var(--line); }
+.nav.is-scrolled .lang-toggle:hover, .nav.is-scrolled .lang-toggle:focus-visible { background: var(--forest); color: var(--cream); }
+.lang-toggle--menu { margin-top: 0.5rem; }
+
+/* ---------- Hero trust line ---------- */
+.hero__trust { margin-top: 1.75rem; font-size: 0.78rem; letter-spacing: 0.04em; color: rgba(237,233,223,0.78); }
+
+/* ---------- FAQ accordion ---------- */
+.faq__list { max-width: 56rem; border-top: 1px solid var(--line); }
+.faq__item { border-bottom: 1px solid var(--line); }
+.faq__q {
+  list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1.5rem;
+  padding: clamp(1.1rem, 2vw, 1.5rem) 0; min-height: 44px;
+  font-family: var(--font-display); font-weight: 400; font-size: clamp(1.15rem, 2vw, 1.5rem); line-height: 1.25;
+}
+.faq__q::-webkit-details-marker { display: none; }
+.faq__q:focus-visible { outline: 2px solid var(--leaf); outline-offset: 4px; }
+.faq__icon { position: relative; flex: none; width: 14px; height: 14px; }
+.faq__icon::before, .faq__icon::after { content: ""; position: absolute; inset: 50% auto auto 0; width: 14px; height: 1.5px; background: var(--moss); transform: translateY(-50%); transition: transform .3s ease; }
+.faq__icon::after { transform: translateY(-50%) rotate(90deg); }
+.faq__item[open] .faq__icon::after { transform: translateY(-50%) rotate(0deg); }
+.faq__a { color: var(--stone); max-width: 62ch; padding-bottom: clamp(1.1rem, 2vw, 1.5rem); }
+
+/* ---------- Dark contact section: keep form legible ---------- */
+.section--dark .contact__sub, .section--dark .contact__details .label, .section--dark .field label { color: rgba(237,233,223,0.65); }
+.section--dark .contact__details li { border-bottom-color: var(--line-light); }
+.section--dark .field input, .section--dark .field textarea, .section--dark .field select { border-bottom-color: var(--line-light); color: var(--ink-on-dark); }
+.section--dark .field select option { color: var(--forest); }
+.section--dark .lead-form__status { color: var(--leaf); }
+.section--dark .lead-form__status.is-error { color: #E39A86; }
+
+/* ---------- Sticky mobile call bar ---------- */
+.mobile-call {
+  display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: 48;
+  background: var(--leaf); color: var(--forest);
+  padding: 0.85rem var(--gutter) calc(0.85rem + env(safe-area-inset-bottom, 0px));
+  align-items: center; justify-content: space-between; gap: 1rem; min-height: 56px;
+  box-shadow: 0 -1px 0 rgba(27,42,33,0.15);
+}
+.mobile-call__label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.16em; font-weight: 600; }
+.mobile-call__phone { font-weight: 600; font-size: 1.05rem; letter-spacing: 0.02em; }
+.mobile-call__note { font-size: 0.7rem; opacity: 0.8; text-align: right; }
+@media (max-width: 900px) {
+  .nav__right { display: none; }
+  .mobile-call { display: flex; }
+  body { padding-bottom: 72px; }      /* keep footer clear of the bar */
+  .menu { padding-bottom: 72px; }
+}
+@media (max-width: 900px) {
+  /* Hero content sits at the bottom of the viewport — keep it above the call bar */
+  .hero__content { padding-bottom: calc(72px + 2rem); }
+}
+
+</style>
+</head>
+<body>
+
+  <!-- ============================ NAV ============================ -->
+  <header class="nav" data-nav>
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand" data-brand>
+        <span class="leaf-mark" aria-hidden="true"></span>
+        <span data-t="company_short">Beautiful Landscapes</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#testimonials" data-i18n="nav_testimonials">Reviews</a>
+        <a href="#faq" data-i18n="nav_faq">FAQ</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="nav__right">
+        <button type="button" class="lang-toggle" data-lang-toggle data-i18n="lang_switch" aria-label="Ver en español">ES</button>
+        <a href="tel:5127435850" class="nav__cta">(512) 743-5850</a>
+      </div>
+
+      <button class="nav__toggle" data-menu-toggle aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile full-screen menu -->
+  <div class="menu" data-menu hidden>
+    <nav class="menu__links" aria-label="Mobile">
+      <a href="#services" data-menu-link data-i18n="nav_services">Services</a>
+      <a href="#about" data-menu-link data-i18n="nav_about">About</a>
+      <a href="#projects" data-menu-link data-i18n="nav_projects">Projects</a>
+      <a href="#testimonials" data-menu-link data-i18n="nav_testimonials">Reviews</a>
+      <a href="#faq" data-menu-link data-i18n="nav_faq">FAQ</a>
+      <a href="#contact" data-menu-link data-i18n="nav_contact">Contact</a>
+    </nav>
+    <a href="tel:5127435850" class="menu__phone">(512) 743-5850</a>
+    <button type="button" class="lang-toggle lang-toggle--menu" data-lang-toggle data-i18n="lang_switch">ES</button>
+  </div>
+
+  <main id="top">
+
+    <!-- ============================ HERO ============================ -->
+    <section class="hero">
+      <div class="hero__bg" data-hero-bg>
+        <img alt="" data-parallax src="https://beautifullandscapesatx.com/wp-content/uploads/2024/04/esther-phone-pic-3977-scaled.jpg">
+        <div class="hero__scrim"></div>
+      </div>
+      <div class="container hero__content">
+        <p class="eyebrow eyebrow--light" data-t="hero_eyebrow">Landscaping & irrigation · Round Rock, TX</p>
+        <h1 class="hero__title" data-hero-title data-t="hero_headline">Your landscape,
+the way you imagine it.</h1>
+        <p class="hero__sub" data-t="hero_sub">Design, installation, irrigation and drainage for homes and businesses across the Austin metro. One designer sees your project through from the first walk-through to the last plant in the ground.</p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary" data-t="hero_cta">Get a free estimate</a>
+          <a href="#services" class="btn btn--ghost btn--ghost-light" data-t="hero_cta_secondary">See our services</a>
+        </div>
+        <p class="hero__trust"><span data-t="license_display">TCEQ Licensed Irrigator LI# 0016669</span> &nbsp;·&nbsp; <span data-t="emergency_line">24/7 emergency sprinkler repair</span></p>
+      </div>
+      <a href="#services" class="hero__cue" aria-label="Scroll to services">
+        <span data-i18n="scroll">Scroll</span><span class="hero__cue-line"></span>
+      </a>
+    </section>
+
+    <!-- ============================ SERVICES ============================ -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-reveal data-i18n="services_eyebrow">Services</p>
+          <h2 class="section__title" data-reveal data-i18n="services_title">What we do</h2>
+        </header>
+        <ul class="services" data-services><li class="service" data-reveal-item><span class="service__num">01</span><div><h3 class="service__title">Irrigation &amp; sprinkler systems</h3><p class="service__desc">New sprinkler system design and installation, head and valve replacement, controller upgrades, and 24/7 emergency repair. Every system is designed by a TCEQ licensed irrigator for full coverage with less water.</p></div><span class="service__arrow" aria-hidden="true">&rarr;</span><img class="service__thumb" src="https://beautifullandscapesatx.com/wp-content/uploads/2024/07/OIP.jpg" alt="" loading="lazy"></li><li class="service" data-reveal-item><span class="service__num">02</span><div><h3 class="service__title">Drainage solutions</h3><p class="service__desc">French drains, catch basins, surface drains and rain gardens that move water away from your foundation and stop standing water in the yard after Central Texas storms.</p></div><span class="service__arrow" aria-hidden="true">&rarr;</span><img class="service__thumb" src="https://beautifullandscapesatx.com/wp-content/uploads/2024/04/esther-phone-pic-4457-scaled.jpg" alt="" loading="lazy"></li><li class="service" data-reveal-item><span class="service__num">03</span><div><h3 class="service__title">Landscape design &amp; installation</h3><p class="service__desc">Flower beds, raised beds, native and xeriscape plantings, mulch, river rock and sod — including drought-tolerant Zoysia and Bermuda that hold up through an Austin summer. Virtual design consultations available.</p></div><span class="service__arrow" aria-hidden="true">&rarr;</span><img class="service__thumb" src="https://beautifullandscapesatx.com/wp-content/uploads/2024/04/esther-phone-pic-5587-scaled.jpg" alt="" loading="lazy"></li><li class="service" data-reveal-item><span class="service__num">04</span><div><h3 class="service__title">Stone &amp; hardscaping</h3><p class="service__desc">Flagstone patios and walkways, limestone retaining walls, borders and decomposed granite paths built from Texas native stone to cut water use and last for decades.</p></div><span class="service__arrow" aria-hidden="true">&rarr;</span><img class="service__thumb" src="https://beautifullandscapesatx.com/wp-content/uploads/2024/04/esther-phone-pics-632-scaled.jpg" alt="" loading="lazy"></li><li class="service" data-reveal-item><span class="service__num">05</span><div><h3 class="service__title">Tree trimming &amp; removal</h3><p class="service__desc">Oak trimming and sealing, canopy lifts, storm-damage cleanup and safe removal of sick, leaning or foundation-threatening trees. Removal is always the last resort.</p></div><span class="service__arrow" aria-hidden="true">&rarr;</span><img class="service__thumb" src="https://beautifullandscapesatx.com/wp-content/uploads/2024/05/freshly-pruned-conifer-tree-in-a-beautiful-garden-gardening-and-art-picture-id1189385655.jpg" alt="" loading="lazy"></li><li class="service" data-reveal-item><span class="service__num">06</span><div><h3 class="service__title">Landscape lighting</h3><p class="service__desc">Low-voltage path, accent and security lighting designed by an FX Luminaire certified designer so you can use your outdoor space after dark.</p></div><span class="service__arrow" aria-hidden="true">&rarr;</span><img class="service__thumb" src="https://beautifullandscapesatx.com/wp-content/uploads/2024/04/esther-phone-pic-4546-scaled.jpg" alt="" loading="lazy"></li><li class="service" data-reveal-item><span class="service__num">07</span><div><h3 class="service__title">Artificial turf</h3><p class="service__desc">Pet-friendly, water-free turf for play areas, side yards and problem lawns that never recover from the heat.</p></div><span class="service__arrow" aria-hidden="true">&rarr;</span><img class="service__thumb" src="https://beautifullandscapesatx.com/wp-content/uploads/2024/05/easy_landscaping_hardscapes.webp" alt="" loading="lazy"></li><li class="service" data-reveal-item><span class="service__num">08</span><div><h3 class="service__title">Maintenance plans &amp; lawn repair</h3><p class="service__desc">Scheduled visits on the same day each week, seasonal cleanups, bed refreshes and lawn patching for bare spots. Take your weekends back.</p></div><span class="service__arrow" aria-hidden="true">&rarr;</span><img class="service__thumb" src="https://beautifullandscapesatx.com/wp-content/uploads/2024/05/esther-phone-pic-5871-scaled.jpg" alt="" loading="lazy"></li></ul>
+      </div>
+    </section>
+
+    <!-- ============================ ABOUT ============================ -->
+    <section class="section section--dark" id="about">
+      <div class="container about">
+        <div class="about__lead">
+          <p class="eyebrow" data-reveal data-i18n="about_eyebrow">About</p>
+          <h2 class="about__statement" data-reveal data-t="about_statement">One designer, start to finish. No hand-offs, no guessing who to call.</h2>
+        </div>
+        <div class="about__body">
+          <p data-reveal data-t="about_body">Beautiful Landscapes is a woman-owned landscaping and irrigation company founded in Round Rock in 1996. Owner Esther Ortiz is a TCEQ licensed irrigator, and the same designer who walks your property is the one who manages the crew and answers your calls until the job is done. We work on homes, apartment communities and commercial properties across the Austin metro, with free consultations, written estimates and a warranty on our work.</p>
+          <div class="about__stats" data-stats><div class="about__stat"><div class="value">1996</div><div class="label">Serving Central Texas since</div></div><div class="about__stat"><div class="value">LI# 0016669</div><div class="label">TCEQ licensed irrigator</div></div><div class="about__stat"><div class="value">24/7</div><div class="label">Emergency sprinkler repair</div></div><div class="about__stat"><div class="value">Woman-owned</div><div class="label">Texas HUB certified</div></div></div>
+        </div>
+        <div class="about__media" data-reveal>
+          <img alt="Landscape installation by Beautiful Landscapes & Irrigation in Round Rock, TX" data-parallax src="https://beautifullandscapesatx.com/wp-content/uploads/2024/05/esther-phone-pic-5507-scaled-e1715000251378.jpg">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ PROJECTS ============================ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-reveal data-i18n="projects_eyebrow">Projects</p>
+          <h2 class="section__title" data-reveal data-i18n="projects_title">Recent work</h2>
+        </header>
+        <div class="projects" data-projects><article class="project" data-reveal-item><div class="project__frame"><img src="https://beautifullandscapesatx.com/wp-content/uploads/2024/04/esther-phone-pics-632-scaled.jpg" alt="Flagstone patio — Round Rock, TX" loading="lazy"></div><div class="project__caption"><div><div class="project__name">Flagstone patio</div><div class="project__loc">Round Rock, TX</div></div><div class="project__type">Hardscaping</div></div></article><article class="project" data-reveal-item><div class="project__frame"><img src="https://beautifullandscapesatx.com/wp-content/uploads/2024/05/esther-phone-pic-5871-scaled.jpg" alt="New turf and concrete — Cedar Park, TX" loading="lazy"></div><div class="project__caption"><div><div class="project__name">New turf and concrete</div><div class="project__loc">Cedar Park, TX</div></div><div class="project__type">Lawn &amp; hardscape</div></div></article><article class="project" data-reveal-item><div class="project__frame"><img src="https://beautifullandscapesatx.com/wp-content/uploads/2024/04/esther-phone-pic-4546-scaled.jpg" alt="Xeriscape front yard — Austin, TX" loading="lazy"></div><div class="project__caption"><div><div class="project__name">Xeriscape front yard</div><div class="project__loc">Austin, TX</div></div><div class="project__type">Design &amp; install</div></div></article><article class="project" data-reveal-item><div class="project__frame"><img src="https://beautifullandscapesatx.com/wp-content/uploads/2024/04/esther-phone-pic-5587-scaled.jpg" alt="Flower beds and plantings — Leander, TX" loading="lazy"></div><div class="project__caption"><div><div class="project__name">Flower beds and plantings</div><div class="project__loc">Leander, TX</div></div><div class="project__type">Planting</div></div></article><article class="project" data-reveal-item><div class="project__frame"><img src="https://beautifullandscapesatx.com/wp-content/uploads/2024/05/hardscape4.jpg" alt="Flagstone walkway — Pflugerville, TX" loading="lazy"></div><div class="project__caption"><div><div class="project__name">Flagstone walkway</div><div class="project__loc">Pflugerville, TX</div></div><div class="project__type">Hardscaping</div></div></article><article class="project" data-reveal-item><div class="project__frame"><img src="https://beautifullandscapesatx.com/wp-content/uploads/2024/04/esther-phone-pic-4457-scaled.jpg" alt="Before and after: full yard makeover — Round Rock, TX" loading="lazy"></div><div class="project__caption"><div><div class="project__name">Before and after: full yard makeover</div><div class="project__loc">Round Rock, TX</div></div><div class="project__type">Design &amp; install</div></div></article></div>
+      </div>
+    </section>
+
+    <!-- ============================ TESTIMONIALS ============================ -->
+    <section class="section section--dark" id="testimonials">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <p class="eyebrow" data-reveal data-i18n="testimonials_eyebrow">What clients say</p>
+        </header>
+        <div class="quotes" data-quotes><blockquote class="quote" data-reveal-item><p class="quote__text">&ldquo;My property was in desperate need of a makeover, and Beautiful Landscapes truly exceeded my expectations. Their team listened attentively to my vision and offered valuable insights to enhance it. Every aspect of the landscaping and irrigation installation was executed flawlessly.&rdquo;</p><div class="quote__attr">Kathy L. <span class="quote__meta">· Round Rock, TX</span></div></blockquote><blockquote class="quote" data-reveal-item><p class="quote__text">&ldquo;They do tree removal also. We liked them because all the employees are hard working, honest and reliable. I have used them on several occasions and they always come on time, and the prices are great too.&rdquo;</p><div class="quote__attr">Carmen M. <span class="quote__meta">· Leander, TX</span></div></blockquote><blockquote class="quote" data-reveal-item><p class="quote__text">&ldquo;The entire process was smooth and hassle-free thanks to the efficient communication and project management of the team. They completed the project within the agreed-upon timeline and budget.&rdquo;</p><div class="quote__attr">David &amp; Jennifer <span class="quote__meta">· Cedar Park, TX</span></div></blockquote><blockquote class="quote" data-reveal-item><p class="quote__text">&ldquo;We wholeheartedly recommend Beautiful Landscapes to anyone seeking professional landscaping and irrigation services. Thank you for turning our outdoor space into a stunning masterpiece.&rdquo;</p><div class="quote__attr">Bob &amp; Kate <span class="quote__meta">· Austin, TX</span></div></blockquote></div>
+      </div>
+    </section>
+
+    <!-- ============================ FAQ ============================ -->
+    <section class="section" id="faq">
+      <div class="container faq">
+        <header class="section__head">
+          <p class="eyebrow" data-reveal data-i18n="faq_eyebrow">FAQ</p>
+          <h2 class="section__title" data-reveal data-i18n="faq_title">Questions we hear a lot</h2>
+        </header>
+        <div class="faq__list" data-faqs><details class="faq__item" data-reveal-item open><summary class="faq__q">Are you licensed and insured?<span class="faq__icon" aria-hidden="true"></span></summary><p class="faq__a">Yes. Beautiful Landscapes is fully insured, and our irrigation work is done under Texas irrigator license LI# 0016669, issued by the TCEQ, which regulates irrigation in Texas.</p></details><details class="faq__item" data-reveal-item><summary class="faq__q">Which areas do you serve?<span class="faq__icon" aria-hidden="true"></span></summary><p class="faq__a">Round Rock, Austin, Cedar Park, Leander, Pflugerville, Georgetown, Hutto and the surrounding Austin metro.</p></details><details class="faq__item" data-reveal-item><summary class="faq__q">Do you offer emergency sprinkler repair?<span class="faq__icon" aria-hidden="true"></span></summary><p class="faq__a">Yes. Call (512) 743-5850 any time, day or night. Emergency projects can also be scheduled on Sundays for an additional fee.</p></details><details class="faq__item" data-reveal-item><summary class="faq__q">Is the consultation free?<span class="faq__icon" aria-hidden="true"></span></summary><p class="faq__a">Yes. Consultations and written estimates are free, and we offer transparent pricing with no surprises.</p></details><details class="faq__item" data-reveal-item><summary class="faq__q">What deposit do you require?<span class="faq__icon" aria-hidden="true"></span></summary><p class="faq__a">Projects typically start with a 50% deposit, with the balance due on completion. Financing is available through LightStream.</p></details><details class="faq__item" data-reveal-item><summary class="faq__q">Do you offer maintenance plans?<span class="faq__icon" aria-hidden="true"></span></summary><p class="faq__a">Yes. We offer tailored maintenance plans with visits scheduled on the same day and time each week, so your landscape looks its best year-round.</p></details><details class="faq__item" data-reveal-item><summary class="faq__q">Do you warranty your work?<span class="faq__icon" aria-hidden="true"></span></summary><p class="faq__a">Yes. We stand behind our workmanship and provide a warranty so you have peace of mind long after the project is finished.</p></details></div>
+      </div>
+    </section>
+
+    <!-- ============================ CONTACT ============================ -->
+    <section class="section section--dark" id="contact">
+      <div class="container contact">
+        <div class="contact__lead">
+          <p class="eyebrow" data-reveal data-i18n="contact_eyebrow">Contact</p>
+          <h2 class="section__title" data-reveal data-t="contact_headline">Let's talk about your yard.</h2>
+          <p class="contact__sub" data-reveal data-t="contact_sub">Tell us what you need and we'll get back to you with a free estimate, usually the same day.</p>
+
+          <ul class="contact__details" data-reveal>
+            <li><span class="label" data-i18n="label_call">Call</span><a href="tel:5127435850">(512) 743-5850</a></li>
+            <li><span class="label" data-i18n="label_email">Email</span><a href="mailto:beautiful.esther@yahoo.com">beautiful.esther@yahoo.com</a></li>
+            <li><span class="label" data-i18n="label_visit">Visit</span><span>2910 Red Bud Ln<br>Round Rock, TX 78664</span></li>
+            <li><span class="label" data-i18n="label_serving">Serving</span><span data-t="areas_served">Round Rock, Austin, Cedar Park, Leander, Pflugerville, Georgetown & Hutto</span></li>
+            <li><span class="label" data-i18n="label_hours">Hours</span><span data-t="hours">Mon–Sat 8:00 AM – 7:00 PM · Sun by emergency appointment</span></li>
+          </ul>
+        </div>
+
+        <!-- GHL LEAD FORM.  Fields map to GHL contact fields (see GHL-INTEGRATION.md). -->
+        <form class="lead-form" data-lead-form novalidate>
+          <div class="field">
+            <label for="lf-name" data-i18n="form_name">Name</label>
+            <input id="lf-name" name="full_name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="lf-phone" data-i18n="form_phone">Phone</label>
+              <input id="lf-phone" name="phone" type="tel" autocomplete="tel" required />
+            </div>
+            <div class="field">
+              <label for="lf-email" data-i18n="form_email">Email</label>
+              <input id="lf-email" name="email" type="email" autocomplete="email" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="lf-service" data-i18n="form_service">Service needed</label>
+            <select id="lf-service" name="service" data-service-select><option value="">Select a service…</option><option value="Irrigation &amp; sprinkler systems">Irrigation &amp; sprinkler systems</option><option value="Drainage solutions">Drainage solutions</option><option value="Landscape design &amp; installation">Landscape design &amp; installation</option><option value="Stone &amp; hardscaping">Stone &amp; hardscaping</option><option value="Tree trimming &amp; removal">Tree trimming &amp; removal</option><option value="Landscape lighting">Landscape lighting</option><option value="Artificial turf">Artificial turf</option><option value="Maintenance plans &amp; lawn repair">Maintenance plans &amp; lawn repair</option><option value="Other">Something else</option></select>
+          </div>
+          <div class="field">
+            <label for="lf-message" data-i18n="form_message">Project details</label>
+            <textarea id="lf-message" name="message" rows="4"></textarea>
+          </div>
+          <input type="hidden" name="language" value="en" data-lang-field />
+          <button type="submit" class="btn btn--primary btn--block" data-submit data-i18n="form_submit">Request my free estimate</button>
+          <p class="lead-form__status" data-form-status role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="leaf-mark" aria-hidden="true"></span>
+        <span>Beautiful Landscapes & Irrigation</span>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#faq" data-i18n="nav_faq">FAQ</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+        <a href="https://www.lightstream.com/landscape-financing" target="_blank" rel="noopener" data-i18n="nav_financing">Financing</a>
+      </nav>
+      <div class="footer__meta">
+        <a href="tel:5127435850">(512) 743-5850</a>
+        <span>2910 Red Bud Ln, Round Rock, TX 78664</span>
+        <span data-t="license_display">TCEQ Licensed Irrigator LI# 0016669</span>
+        <span class="footer__note" data-t="founded_note">Serving Central Texas since 1996</span>
+      </div>
+    </div>
+    <div class="container footer__base">
+      <span>© <span data-year>2026</span> Beautiful Landscapes & Irrigation</span>
+      <span data-socials><a href="https://www.facebook.com/p/Beautiful-Landscapes-Irrigation-16669-100041829050212/" target="_blank" rel="noopener">Facebook</a></span>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile call bar (hidden on desktop) -->
+  <a href="tel:5127435850" class="mobile-call">
+    <span class="mobile-call__label" data-i18n="mobile_call">Call now</span>
+    <span class="mobile-call__phone">(512) 743-5850</span>
+    <span class="mobile-call__note" data-i18n="mobile_emergency">24/7 sprinkler repair</span>
+  </a>
+
+  <!-- Structured data (LocalBusiness + FAQ). Placed in the page body so the GHL embed keeps it. -->
+  <script type="application/ld+json" data-schema>[{"@context":"https://schema.org","@type":["LandscapingBusiness","LocalBusiness"],"@id":"https://beautifullandscapesatx.com/#business","name":"Beautiful Landscapes & Irrigation","url":"https://beautifullandscapesatx.com/","telephone":"+15127435850","email":"beautiful.esther@yahoo.com","image":"https://beautifullandscapesatx.com/wp-content/uploads/2024/04/esther-phone-pic-3977-scaled.jpg","description":"Licensed landscaping and irrigation company serving Round Rock, Austin, Cedar Park, Leander and Pflugerville since 1996. Sprinkler repair, drainage, hardscaping, tree work. Free estimates.","foundingDate":"1996","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"2910 Red Bud Ln","addressLocality":"Round Rock","addressRegion":"TX","postalCode":"78664","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":"30.5083","longitude":"-97.6789"},"areaServed":[{"@type":"City","name":"Round Rock, TX"},{"@type":"City","name":"Austin, TX"},{"@type":"City","name":"Cedar Park, TX"},{"@type":"City","name":"Leander, TX"},{"@type":"City","name":"Pflugerville, TX"},{"@type":"City","name":"Georgetown, TX"},{"@type":"City","name":"Hutto, TX"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"19:00"}],"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"license","name":"Texas Licensed Irrigator LI# 0016669","recognizedBy":{"@type":"Organization","name":"Texas Commission on Environmental Quality"}},"sameAs":["https://www.facebook.com/p/Beautiful-Landscapes-Irrigation-16669-100041829050212/"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Landscaping and irrigation services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Irrigation & sprinkler systems","description":"New sprinkler system design and installation, head and valve replacement, controller upgrades, and 24/7 emergency repair. Every system is designed by a TCEQ licensed irrigator for full coverage with less water."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Drainage solutions","description":"French drains, catch basins, surface drains and rain gardens that move water away from your foundation and stop standing water in the yard after Central Texas storms."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Landscape design & installation","description":"Flower beds, raised beds, native and xeriscape plantings, mulch, river rock and sod — including drought-tolerant Zoysia and Bermuda that hold up through an Austin summer. Virtual design consultations available."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Stone & hardscaping","description":"Flagstone patios and walkways, limestone retaining walls, borders and decomposed granite paths built from Texas native stone to cut water use and last for decades."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Tree trimming & removal","description":"Oak trimming and sealing, canopy lifts, storm-damage cleanup and safe removal of sick, leaning or foundation-threatening trees. Removal is always the last resort."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Landscape lighting","description":"Low-voltage path, accent and security lighting designed by an FX Luminaire certified designer so you can use your outdoor space after dark."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Artificial turf","description":"Pet-friendly, water-free turf for play areas, side yards and problem lawns that never recover from the heat."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Maintenance plans & lawn repair","description":"Scheduled visits on the same day each week, seasonal cleanups, bed refreshes and lawn patching for bare spots. Take your weekends back."}}]}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are you licensed and insured?","acceptedAnswer":{"@type":"Answer","text":"Yes. Beautiful Landscapes is fully insured, and our irrigation work is done under Texas irrigator license LI# 0016669, issued by the TCEQ, which regulates irrigation in Texas."}},{"@type":"Question","name":"Which areas do you serve?","acceptedAnswer":{"@type":"Answer","text":"Round Rock, Austin, Cedar Park, Leander, Pflugerville, Georgetown, Hutto and the surrounding Austin metro."}},{"@type":"Question","name":"Do you offer emergency sprinkler repair?","acceptedAnswer":{"@type":"Answer","text":"Yes. Call (512) 743-5850 any time, day or night. Emergency projects can also be scheduled on Sundays for an additional fee."}},{"@type":"Question","name":"Is the consultation free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Consultations and written estimates are free, and we offer transparent pricing with no surprises."}},{"@type":"Question","name":"What deposit do you require?","acceptedAnswer":{"@type":"Answer","text":"Projects typically start with a 50% deposit, with the balance due on completion. Financing is available through LightStream."}},{"@type":"Question","name":"Do you offer maintenance plans?","acceptedAnswer":{"@type":"Answer","text":"Yes. We offer tailored maintenance plans with visits scheduled on the same day and time each week, so your landscape looks its best year-round."}},{"@type":"Question","name":"Do you warranty your work?","acceptedAnswer":{"@type":"Answer","text":"Yes. We stand behind our workmanship and provide a warranty so you have peace of mind long after the project is finished."}}]}]</script>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Site data + logic -->
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

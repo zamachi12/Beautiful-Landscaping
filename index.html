@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>{{seo_title}}</title>
+  <meta name="description" content="{{seo_description}}" />
+  <link rel="canonical" href="{{site_url}}" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#1B2A21" />
+
+  <!-- Local SEO -->
+  <meta name="geo.region" content="{{geo_region}}" />
+  <meta name="geo.placename" content="{{geo_placename}}" />
+  <meta name="geo.position" content="{{geo_lat}};{{geo_lng}}" />
+  <meta name="ICBM" content="{{geo_lat}}, {{geo_lng}}" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="{{company_name}}" />
+  <meta property="og:title" content="{{seo_title}}" />
+  <meta property="og:description" content="{{seo_description}}" />
+  <meta property="og:url" content="{{site_url}}" />
+  <meta property="og:image" content="{{og_image}}" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="es_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="{{hero_image}}" fetchpriority="high" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- ============================ NAV ============================ -->
+  <header class="nav" data-nav data-animate>
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand" data-brand>
+        <span class="leaf-mark" aria-hidden="true"></span>
+        <span data-t="company_short">{{company_short}}</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#testimonials" data-i18n="nav_testimonials">Reviews</a>
+        <a href="#faq" data-i18n="nav_faq">FAQ</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="nav__right">
+        <button type="button" class="lang-toggle" data-lang-toggle data-i18n="lang_switch" aria-label="Ver en español">ES</button>
+        <a href="tel:{{phone_raw}}" class="nav__cta">{{phone_display}}</a>
+      </div>
+
+      <button class="nav__toggle" data-menu-toggle aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile full-screen menu -->
+  <div class="menu" data-menu hidden>
+    <nav class="menu__links" aria-label="Mobile">
+      <a href="#services" data-menu-link data-i18n="nav_services">Services</a>
+      <a href="#about" data-menu-link data-i18n="nav_about">About</a>
+      <a href="#projects" data-menu-link data-i18n="nav_projects">Projects</a>
+      <a href="#testimonials" data-menu-link data-i18n="nav_testimonials">Reviews</a>
+      <a href="#faq" data-menu-link data-i18n="nav_faq">FAQ</a>
+      <a href="#contact" data-menu-link data-i18n="nav_contact">Contact</a>
+    </nav>
+    <a href="tel:{{phone_raw}}" class="menu__phone">{{phone_display}}</a>
+    <button type="button" class="lang-toggle lang-toggle--menu" data-lang-toggle data-i18n="lang_switch">ES</button>
+  </div>
+
+  <main id="top">
+
+    <!-- ============================ HERO ============================ -->
+    <section class="hero">
+      <div class="hero__bg" data-hero-bg>
+        <img alt="" data-parallax data-img="hero_image" />
+        <div class="hero__scrim"></div>
+      </div>
+      <div class="container hero__content">
+        <p class="eyebrow eyebrow--light" data-t="hero_eyebrow">{{hero_eyebrow}}</p>
+        <h1 class="hero__title" data-hero-title data-t="hero_headline">{{hero_headline}}</h1>
+        <p class="hero__sub" data-t="hero_sub">{{hero_sub}}</p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary" data-t="hero_cta">{{hero_cta}}</a>
+          <a href="#services" class="btn btn--ghost btn--ghost-light" data-t="hero_cta_secondary">{{hero_cta_secondary}}</a>
+        </div>
+        <p class="hero__trust"><span data-t="license_display">{{license_display}}</span> &nbsp;·&nbsp; <span data-t="emergency_line">{{emergency_line}}</span></p>
+      </div>
+      <a href="#services" class="hero__cue" aria-label="Scroll to services">
+        <span data-i18n="scroll">Scroll</span><span class="hero__cue-line"></span>
+      </a>
+    </section>
+
+    <!-- ============================ SERVICES ============================ -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-reveal data-i18n="services_eyebrow">Services</p>
+          <h2 class="section__title" data-reveal data-i18n="services_title">What we do</h2>
+        </header>
+        <ul class="services" data-services>
+          <!-- rendered from SITE.services -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================ ABOUT ============================ -->
+    <section class="section section--dark" id="about">
+      <div class="container about">
+        <div class="about__lead">
+          <p class="eyebrow" data-reveal data-i18n="about_eyebrow">About</p>
+          <h2 class="about__statement" data-reveal data-t="about_statement">{{about_statement}}</h2>
+        </div>
+        <div class="about__body">
+          <p data-reveal data-t="about_body">{{about_body}}</p>
+          <div class="about__stats" data-stats><!-- rendered from SITE.about_stats --></div>
+        </div>
+        <div class="about__media" data-reveal>
+          <img alt="Landscape installation by {{company_name}} in Round Rock, TX" data-parallax data-img="about_image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ PROJECTS ============================ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-reveal data-i18n="projects_eyebrow">Projects</p>
+          <h2 class="section__title" data-reveal data-i18n="projects_title">Recent work</h2>
+        </header>
+        <div class="projects" data-projects><!-- rendered from SITE.projects --></div>
+      </div>
+    </section>
+
+    <!-- ============================ TESTIMONIALS ============================ -->
+    <section class="section section--dark" id="testimonials">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <p class="eyebrow" data-reveal data-i18n="testimonials_eyebrow">What clients say</p>
+        </header>
+        <div class="quotes" data-quotes><!-- rendered from SITE.testimonials --></div>
+      </div>
+    </section>
+
+    <!-- ============================ FAQ ============================ -->
+    <section class="section" id="faq">
+      <div class="container faq">
+        <header class="section__head">
+          <p class="eyebrow" data-reveal data-i18n="faq_eyebrow">FAQ</p>
+          <h2 class="section__title" data-reveal data-i18n="faq_title">Questions we hear a lot</h2>
+        </header>
+        <div class="faq__list" data-faqs><!-- rendered from SITE.faqs --></div>
+      </div>
+    </section>
+
+    <!-- ============================ CONTACT ============================ -->
+    <section class="section section--dark" id="contact">
+      <div class="container contact">
+        <div class="contact__lead">
+          <p class="eyebrow" data-reveal data-i18n="contact_eyebrow">Contact</p>
+          <h2 class="section__title" data-reveal data-t="contact_headline">{{contact_headline}}</h2>
+          <p class="contact__sub" data-reveal data-t="contact_sub">{{contact_sub}}</p>
+
+          <ul class="contact__details" data-reveal>
+            <li><span class="label" data-i18n="label_call">Call</span><a href="tel:{{phone_raw}}">{{phone_display}}</a></li>
+            <li><span class="label" data-i18n="label_email">Email</span><a href="mailto:{{email}}">{{email}}</a></li>
+            <li><span class="label" data-i18n="label_visit">Visit</span><span>{{address_line}}<br>{{address_city}}</span></li>
+            <li><span class="label" data-i18n="label_serving">Serving</span><span data-t="areas_served">{{areas_served}}</span></li>
+            <li><span class="label" data-i18n="label_hours">Hours</span><span data-t="hours">{{hours}}</span></li>
+          </ul>
+        </div>
+
+        <!-- GHL LEAD FORM.  Fields map to GHL contact fields (see GHL-INTEGRATION.md). -->
+        <form class="lead-form" data-lead-form novalidate>
+          <div class="field">
+            <label for="lf-name" data-i18n="form_name">Name</label>
+            <input id="lf-name" name="full_name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="lf-phone" data-i18n="form_phone">Phone</label>
+              <input id="lf-phone" name="phone" type="tel" autocomplete="tel" required />
+            </div>
+            <div class="field">
+              <label for="lf-email" data-i18n="form_email">Email</label>
+              <input id="lf-email" name="email" type="email" autocomplete="email" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="lf-service" data-i18n="form_service">Service needed</label>
+            <select id="lf-service" name="service" data-service-select></select>
+          </div>
+          <div class="field">
+            <label for="lf-message" data-i18n="form_message">Project details</label>
+            <textarea id="lf-message" name="message" rows="4"></textarea>
+          </div>
+          <input type="hidden" name="language" value="en" data-lang-field />
+          <button type="submit" class="btn btn--primary btn--block" data-submit data-i18n="form_submit">Request my free estimate</button>
+          <p class="lead-form__status" data-form-status role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="leaf-mark" aria-hidden="true"></span>
+        <span>{{company_name}}</span>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#faq" data-i18n="nav_faq">FAQ</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+        <a href="{{financing_url}}" target="_blank" rel="noopener" data-i18n="nav_financing">Financing</a>
+      </nav>
+      <div class="footer__meta">
+        <a href="tel:{{phone_raw}}">{{phone_display}}</a>
+        <span>{{address_line}}, {{address_city}}</span>
+        <span data-t="license_display">{{license_display}}</span>
+        <span class="footer__note" data-t="founded_note">{{founded_note}}</span>
+      </div>
+    </div>
+    <div class="container footer__base">
+      <span>© <span data-year></span> {{company_name}}</span>
+      <span data-socials></span>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile call bar (hidden on desktop) -->
+  <a href="tel:{{phone_raw}}" class="mobile-call">
+    <span class="mobile-call__label" data-i18n="mobile_call">Call now</span>
+    <span class="mobile-call__phone">{{phone_display}}</span>
+    <span class="mobile-call__note" data-i18n="mobile_emergency">24/7 sprinkler repair</span>
+  </a>
+
+  <!-- Structured data (LocalBusiness + FAQ). Placed in the page body so the GHL embed keeps it. -->
+  <script type="application/ld+json" data-schema></script>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Site data + logic -->
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
