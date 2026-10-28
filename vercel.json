@@ -1,4 +1,8 @@
 {
   "version": 2,
-  "cleanUrls": true
+  "cleanUrls": true,
+  "routes": [
+    { "src": "/", "dest": "/index.static.html" },
+    { "src": "/index.html", "dest": "/index.static.html" }
+  ]
 }
